@@ -1,18 +1,21 @@
 import "./styles.css"
-import pageLoad from "./page-load";
+import home from "./home";
 import menu from "./menu"
 import navigation from "./nav";
 
 
+
   const content = document.getElementById('content');
+  
   const heading = document.createElement('h1');
   const para = document.createElement('p');
   const topImg = document.createElement('img');
 
 
+
 // Initialise page
 navigation();
-pageLoad();
+home();
 
 
 

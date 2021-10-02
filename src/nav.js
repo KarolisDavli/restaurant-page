@@ -1,30 +1,43 @@
-import { globalVar, clearContent } from "./index.js";
-import pageLoad from "./page-load";
+import {clearContent } from "./index.js";
+import home from "./home";
 import menu from "./menu"
-
+import contact from "./contact.js";
 
 
 // Navigation
 function navigation() {
-  const nav = document.getElementById('nav');
+  const nav = document.createElement('div');
+  nav.classList.add('nav');
+  
   const homeBtn = document.createElement('button');
   const menuBtn = document.createElement('button');
   const contactBtn = document.createElement('button');
-
-  nav.append(homeBtn, menuBtn, contactBtn);
-
 
   homeBtn.innerText = 'Home';
   menuBtn.innerText = 'Menu';
   contactBtn.innerText = 'Contact';
 
+  nav.append(homeBtn, menuBtn, contactBtn);
+  content.appendChild(nav);
+
+  const clearContent = () => {
+    // content.innerHTML = '';
+    content.removeChild(content.lastChild);
+  }
+
   homeBtn.addEventListener('click', () => {
     clearContent();
-    pageLoad();
+    home();
   });
+
   menuBtn.addEventListener('click', () => {
     clearContent();
     menu();
+  });
+
+  contactBtn.addEventListener('click', () => {
+    clearContent();
+    contact();
   });
 }
 

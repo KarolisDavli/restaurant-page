@@ -4,9 +4,10 @@ import {
   para,
   topImg,} from "./index.js";
 
-const pageLoad = () => {
+const home = () => {
 
-  const pageLoadContent = document.createElement('div');
+  const homeContent = document.createElement('div');
+
   
   heading.innerText = 'Awesome Restaurant Page';
 
@@ -17,11 +18,11 @@ const pageLoad = () => {
   topImg.classList.add('top-img');
   topImg.setAttribute('src', '../img/main.jpg');
 
-  pageLoadContent.append(heading, para, topImg)
-  content.append(pageLoadContent);
+  homeContent.append(heading, para, topImg)
+  content.append(homeContent);
 
 }
 
-export default pageLoad;
+export default home;
 
 

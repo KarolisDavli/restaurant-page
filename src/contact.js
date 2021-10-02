@@ -4,13 +4,14 @@ import {
   para,
   topImg,} from "./index.js";
 
-const menu = () => {
+const contact = () => {
 
   const menuContent = document.createElement('div');
 
-  heading.innerText = 'Menu';
+  heading.innerText = 'Contact';
 
-  para.innerText = 'Burger please!';
+
+  para.innerText = 'Get in touch';
 
   // topImg.classList.add('top-img');
   // topImg.setAttribute('src', '../img/main.jpg');
@@ -20,4 +21,4 @@ const menu = () => {
   console.log('this is menu');
 }
 
-export default menu;
+export default contact;
