@@ -1,22 +1,19 @@
 import {
   content,
-  heading,
+  heading2,
   para,
-  topImg,} from "./index.js";
+} from "./index.js";
 
 const contact = () => {
 
   const menuContent = document.createElement('div');
 
-  heading.innerText = 'Contact';
+  heading2.innerText = 'Contact';
 
 
   para.innerText = 'Get in touch';
 
-  // topImg.classList.add('top-img');
-  // topImg.setAttribute('src', '../img/main.jpg');
-
-  menuContent.append(heading, para, topImg);
+  menuContent.append(heading2, para);
   content.append(menuContent);
   console.log('this is menu');
 }

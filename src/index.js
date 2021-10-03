@@ -5,13 +5,17 @@ import navigation from "./nav";
 
 
 
-  const content = document.getElementById('content');
-  
-  const heading = document.createElement('h1');
-  const para = document.createElement('p');
-  const topImg = document.createElement('img');
+// Content elements
+const content = document.getElementById('content');
+const heading1 = document.createElement('h1');
+const heading2 = document.createElement('h2')
+const para = document.createElement('p');
 
-
+// Logo
+const logo = document.createElement('div');
+logo.setAttribute('id', 'logo');
+logo.innerText = 'foodlab';
+content.append(logo);
 
 // Initialise page
 navigation();
@@ -19,18 +23,11 @@ home();
 
 
 
-const clearContent = () => {
-  // content.innerHTML = '';
-  content.removeChild(content.lastChild);
-}
-
-
 export {
   content,
-  heading,
+  heading1,
+  heading2,
   para,
-  topImg,
-  clearContent
 };
 
 // viskas gerai, tik dabar clearContent funcija

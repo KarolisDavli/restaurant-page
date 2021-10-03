@@ -1,24 +1,21 @@
 import {
   content,
-  heading,
+  heading1,
   para,
-  topImg,} from "./index.js";
+} from "./index.js";
 
 const home = () => {
 
   const homeContent = document.createElement('div');
 
-  
-  heading.innerText = 'Awesome Restaurant Page';
+  heading1.innerText = 'Less drama more food';
+  para.innerText = 'Restaurant of the people, by the people, for the people';
 
-  
-  para.innerText = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ipsum quae officiis facere quam eos sit, voluptatum tenetur amet explicabo qui corporis dolores animi? Quisquam vitae reiciendint repudiaus!';
+  const ctaButton = document.createElement('button');
+  ctaButton.classList.add('cta', 'btn');
+  ctaButton.innerText = 'Book a table';
 
-  
-  topImg.classList.add('top-img');
-  topImg.setAttribute('src', '../img/main.jpg');
-
-  homeContent.append(heading, para, topImg)
+  homeContent.append(heading1, para, ctaButton);
   content.append(homeContent);
 
 }

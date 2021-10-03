@@ -1,4 +1,4 @@
-import {clearContent } from "./index.js";
+import {clearContent, content } from "./index.js";
 import home from "./home";
 import menu from "./menu"
 import contact from "./contact.js";
@@ -6,12 +6,17 @@ import contact from "./contact.js";
 
 // Navigation
 function navigation() {
+  
   const nav = document.createElement('div');
   nav.classList.add('nav');
   
   const homeBtn = document.createElement('button');
   const menuBtn = document.createElement('button');
   const contactBtn = document.createElement('button');
+
+  homeBtn.classList.add('btn');
+  menuBtn.classList.add('btn');
+  contactBtn.classList.add('btn');
 
   homeBtn.innerText = 'Home';
   menuBtn.innerText = 'Menu';

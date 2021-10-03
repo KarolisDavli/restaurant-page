@@ -1,3 +1,67 @@
-.top-img {
-  max-width: 650px;
+/* Simple reset */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Styles */
+#content {
+  background: url('img/main.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.cta {
+  color: white;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  border: 1px white solid;
+  border-radius: 1rem;
+}
+
+.nav-btn {
+  color: white;
+  padding: .5rem;
+
+
+}
+
+body {
+  color: aliceblue;
 }
