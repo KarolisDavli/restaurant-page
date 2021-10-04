@@ -66,4 +66,8 @@ body {
   padding: .5rem;
 }
 
+.item-name {
+  font-size: 2rem;
+}
+
 /* Meal menu */
