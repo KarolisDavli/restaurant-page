@@ -7,6 +7,7 @@ import {
 const home = () => {
 
   const homeContent = document.createElement('div');
+  homeContent.classList.add('home-content');
 
   heading1.innerText = 'Less drama more food';
   para.innerText = 'Restaurant of the people, by the people, for the people';

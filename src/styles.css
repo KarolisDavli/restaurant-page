@@ -43,6 +43,7 @@ body {
   overflow: hidden;
 }
 
+/* Typography */
 h1,
 h2 {
   font-family: juniper-std, sans-serif;
@@ -50,6 +51,8 @@ h2 {
 
 h1 {
   font-size: 5rem;
+  max-width: 400px;
+  margin: 0 auto .5rem;
 }
 
 h2 {
@@ -58,9 +61,17 @@ h2 {
 
 p {
   font-family: mr-eaves-modern, sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.3rem;
 }
 
+.sub-heading {
+  font-family: shadows-into-light, sans-serif;
+  font-size: 1.8rem;
+  margin: 0 auto 3rem;
+  max-width: 530px;
+}
+
+/* Global */
 #logo {
   font-family: manteiga-gorda, sans-serif;
   font-size: 1.5rem;
@@ -74,21 +85,22 @@ p {
   /* Reseach this!!!!! */
   overflow-y: scroll;
   height: 100vh;
-  padding: 7% 2rem;
+  padding: 3% 2rem;
   text-align: center;
 }
 
-.btn {
+button {
   cursor: pointer;
   background: none;
   color: white;
   border: none;
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   font-family: mr-eaves-modern, sans-serif;
 }
 
 .cta {
   padding: 1rem 2rem;
+  margin-top: 8rem;
   background-color: transparent;
   border: 1px white solid;
   border-radius: 1rem;
@@ -96,16 +108,19 @@ p {
 
 /* Navigation */
 .nav {
-  padding: 1rem 0 5rem;
+  padding: 1.7rem 0 5rem;
 }
 
-.nav-btn {
-  padding: 0 2rem;
+.nav button {
+  margin: 0 3rem;
 }
 
-.sub-heading {
-  font-family: shadows-into-light, sans-serif;
-  font-size: 1.8rem;
+
+
+/* Home page */
+.home-content {
+  margin-top: 4rem;
 }
 
-/* Meal menu */
+
+/* Menu page */

@@ -2,6 +2,7 @@ import {
   content,
   heading2,
   para,
+  menuHeading,
 } from "./index.js";
 
 
@@ -13,10 +14,10 @@ const menu = () => {
   menuContent.classList.add('menu');
 
   heading2.innerText = 'Welcome to foodlab';
-
   para.innerText = 'Our food is cooked fresh and based on fresh ingredients and produce, during busy hours waiting times may be longer than we’d like them to be. After all we all know, good food takes time ';
+  menuHeading.append(heading2, para)
 
-  menuContent.append(heading2, para);
+  menuContent.append(menuHeading);
   content.append(menuContent);
 
   const menuInfo = [

@@ -14,10 +14,6 @@ function navigation() {
   const menuBtn = document.createElement('button');
   const contactBtn = document.createElement('button');
 
-  homeBtn.classList.add('btn');
-  menuBtn.classList.add('btn');
-  contactBtn.classList.add('btn');
-
   homeBtn.innerText = 'Home';
   menuBtn.innerText = 'Menu';
   contactBtn.innerText = 'Contact';

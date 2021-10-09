@@ -2,17 +2,20 @@ import {
   content,
   heading2,
   para,
+  menuHeading,
 } from "./index.js";
 
 const contact = () => {
 
   const contactContent = document.createElement('div');
   contactContent.classList.add('contact');
-
+  
   heading2.innerText = 'Get in touch';
+  para.innerHTML = 'Call us, email us or just come by';
+  menuHeading.append(heading2, para)
 
 
-  contactContent.append(heading2, para);
+  contactContent.append(menuHeading);
   content.append(contactContent);
 
 
