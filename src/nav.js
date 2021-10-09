@@ -26,7 +26,6 @@ function navigation() {
   content.appendChild(nav);
 
   const clearContent = () => {
-    // content.innerHTML = '';
     content.removeChild(content.lastChild);
   }
 
