@@ -2,7 +2,7 @@ import {
   content,
   heading2,
   para,
-  menuHeading,
+  subHeading,
 } from "./index.js";
 
 
@@ -10,14 +10,17 @@ import {
 
 const menu = () => {
 
+  const menuList = document.createElement('div');
+  menuList.classList.add('menu-list');
+
   const menuContent = document.createElement('div');
   menuContent.classList.add('menu');
 
   heading2.innerText = 'Welcome to foodlab';
   para.innerText = 'Our food is cooked fresh and based on fresh ingredients and produce, during busy hours waiting times may be longer than we’d like them to be. After all we all know, good food takes time ';
-  menuHeading.append(heading2, para)
+  subHeading.append(heading2, para)
 
-  menuContent.append(menuHeading);
+  menuContent.append(subHeading);
   content.append(menuContent);
 
   const menuInfo = [
@@ -34,19 +37,18 @@ const menu = () => {
   
   menuInfo.forEach(i => {
     const menuRender = document.createElement('div');
+    menuRender.classList.add('menu-item');
     const itemName = document.createElement('h4');
     const itemDesc = document.createElement('p');
-
-    itemName.classList.add('sub-heading');
+    itemName.classList.add('item-name');
 
     itemName.innerHTML = i[0];
     itemDesc.innerHTML = i[1];
 
     menuRender.append(itemName, itemDesc);
-    menuContent.append(menuRender);
+    menuList.append(menuRender);
+    menuContent.append(menuList);
 
-    console.log(i[0]);
-    console.log(i[1]);
   })
 }
 

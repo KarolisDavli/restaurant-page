@@ -2,7 +2,7 @@ import {
   content,
   heading2,
   para,
-  menuHeading,
+  subHeading,
 } from "./index.js";
 
 const contact = () => {
@@ -12,26 +12,29 @@ const contact = () => {
   
   heading2.innerText = 'Get in touch';
   para.innerHTML = 'Call us, email us or just come by';
-  menuHeading.append(heading2, para)
+  subHeading.append(heading2, para)
 
 
-  contactContent.append(menuHeading);
+  contactContent.append(subHeading);
   content.append(contactContent);
 
 
   const contactInfo = [
-    ['Address', 'Piazza del Duomo, 56126, Pisa.'],
+    ['Address', 'Piazza del Duomo, 56126, Pisa'],
     ['Phone', '+370 69224808'],
     ['Email', 'hello@foodlab.com'],
-    ['We open', 'Monday - Thursday     09:00 - 23:00 Friday - Saturday     09:00 - 01:00 Sunday     09:00 - 13:00']
+    ['We open', 'Monday - Thursday   09:00 - 23:00' + '<br>' +
+      'Friday - Saturday    09:00 - 01:00' + '<br>' +
+      'Sunday     09:00 - 13:00']
   ];
 
   contactInfo.forEach(i => {
     const infoRender = document.createElement('div');
+    infoRender.classList.add('info-item')
     const bigInfo = document.createElement('h4');
     const smallIfo = document.createElement('p');
 
-    bigInfo.classList.add('sub-heading');
+    // bigInfo.classList.add('');
 
     bigInfo.innerHTML = i[0];
     smallIfo.innerHTML = i[1];

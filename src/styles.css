@@ -59,16 +59,24 @@ h2 {
   font-size: 3rem;
 }
 
+h4 {
+  font-family: shadows-into-light, sans-serif;
+  font-size: 1.8rem;
+}
+
 p {
   font-family: mr-eaves-modern, sans-serif;
   font-size: 1.3rem;
 }
 
 .sub-heading {
-  font-family: shadows-into-light, sans-serif;
   font-size: 1.8rem;
-  margin: 0 auto 3rem;
+  margin: 0 auto 6rem;
   max-width: 530px;
+}
+
+.sub-heading h2 {
+  margin-bottom: 1rem;
 }
 
 /* Global */
@@ -124,3 +132,25 @@ button {
 
 
 /* Menu page */
+.menu-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: left;
+  max-width: 650px;
+  margin: auto;
+  gap: 3rem;
+}
+
+.item-name {
+  margin-bottom: 1rem;
+}
+
+/* Contact page */
+.info-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 600px;
+  margin: 2rem auto;
+  text-align: right;
+}

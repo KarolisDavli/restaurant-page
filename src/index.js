@@ -10,8 +10,8 @@ const content = document.getElementById('content');
 const heading1 = document.createElement('h1');
 const heading2 = document.createElement('h2')
 const para = document.createElement('p');
-const menuHeading = document.createElement('div');
-menuHeading.classList.add('sub-heading');
+const subHeading = document.createElement('div');
+subHeading.classList.add('sub-heading');
 
 // Logo
 const logo = document.createElement('div');
@@ -30,7 +30,7 @@ export {
   heading1,
   heading2,
   para,
-  menuHeading,
+  subHeading,
 };
 
 // viskas gerai, tik dabar clearContent funcija
