@@ -61,7 +61,7 @@ h2 {
 
 h4 {
   font-family: shadows-into-light, sans-serif;
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 p {
@@ -106,13 +106,7 @@ button {
   font-family: mr-eaves-modern, sans-serif;
 }
 
-.cta {
-  padding: 1rem 2rem;
-  margin-top: 8rem;
-  background-color: transparent;
-  border: 1px white solid;
-  border-radius: 1rem;
-}
+
 
 /* Navigation */
 .nav {
@@ -123,13 +117,18 @@ button {
   margin: 0 3rem;
 }
 
-
-
 /* Home page */
 .home-content {
   margin-top: 4rem;
 }
 
+.cta {
+  padding: 1rem 2rem;
+  margin-top: 8rem;
+  background-color: transparent;
+  border: 1px white solid;
+  border-radius: 1rem;
+}
 
 /* Menu page */
 .menu-list {
@@ -143,6 +142,7 @@ button {
 
 .item-name {
   margin-bottom: 1rem;
+  text-transform: uppercase;
 }
 
 /* Contact page */
