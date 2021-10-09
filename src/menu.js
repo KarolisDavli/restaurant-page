@@ -36,8 +36,7 @@ const menu = () => {
     const itemName = document.createElement('h4');
     const itemDesc = document.createElement('p');
 
-    itemName.classList.add('item-name');
-    itemDesc.classList.add('item-desc');
+    itemName.classList.add('sub-heading');
 
     itemName.innerHTML = i[0];
     itemDesc.innerHTML = i[1];

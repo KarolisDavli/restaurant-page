@@ -28,6 +28,8 @@ const contact = () => {
     const bigInfo = document.createElement('h4');
     const smallIfo = document.createElement('p');
 
+    bigInfo.classList.add('sub-heading');
+
     bigInfo.innerHTML = i[0];
     smallIfo.innerHTML = i[1];
 

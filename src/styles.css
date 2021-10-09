@@ -40,34 +40,72 @@ img {
 /* Styles */
 body {
   color: aliceblue;
+  overflow: hidden;
+}
+
+h1,
+h2 {
+  font-family: juniper-std, sans-serif;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+p {
+  font-family: mr-eaves-modern, sans-serif;
+  font-size: 1.25rem;
+}
+
+#logo {
+  font-family: manteiga-gorda, sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
 }
 
 #content {
   background: url('img/main.png');
   background-size: cover;
   background-repeat: no-repeat;
+  /* Reseach this!!!!! */
+  overflow-y: scroll;
   height: 100vh;
+  padding: 7% 2rem;
+  text-align: center;
 }
 
 .btn {
   cursor: pointer;
+  background: none;
+  color: white;
+  border: none;
+  font-size: 1.25rem;
+  font-family: mr-eaves-modern, sans-serif;
 }
 
 .cta {
-  color: white;
   padding: 1rem 2rem;
   background-color: transparent;
   border: 1px white solid;
   border-radius: 1rem;
 }
 
-.nav-btn {
-  color: white;
-  padding: .5rem;
+/* Navigation */
+.nav {
+  padding: 1rem 0 5rem;
 }
 
-.item-name {
-  font-size: 2rem;
+.nav-btn {
+  padding: 0 2rem;
+}
+
+.sub-heading {
+  font-family: shadows-into-light, sans-serif;
+  font-size: 1.8rem;
 }
 
 /* Meal menu */
