@@ -7,7 +7,7 @@
 
 ## Results
 
-> Dynamic restaurant page. All DOM elements created using JavaScript  [Live app pending]()
+> Dynamic restaurant page. All DOM elements created using JavaScript  [Live app here](https://karolisdavli.github.io/restaurant-page/)
 
 ## Stack
 
